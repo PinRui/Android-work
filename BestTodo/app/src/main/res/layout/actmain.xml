@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="230dp"
+        android:src="@drawable/star" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="待辦事項"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="#1bb1aa"
+        android:textSize="26dp" />
+
+    <EditText
+        android:id="@+id/txtTodo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnTime"
+        android:textSize="10pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#1bb1aa"
+        android:text="預計完成日期"
+        />
+    <EditText
+        android:id="@+id/txtDate"
+        android:textSize="10pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnNew"
+            android:textSize="10pt"
+            android:textColor="#1bb1aa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="新增"
+            />
+        <Button
+            android:textColor="#1bb1aa"
+            android:layout_weight="1"
+            android:id="@+id/btnDelete"
+            android:textSize="10pt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="刪除"
+            />
+        <Button
+            android:textColor="#1bb1aa"
+            android:layout_weight="1"
+            android:id="@+id/btnList"
+            android:textSize="10pt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="瀏覽"
+            />
+    </LinearLayout>
+</LinearLayout>
